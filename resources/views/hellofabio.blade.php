@@ -1,4 +1,6 @@
 @extends('layouts.master')
+@section('title','Titolo della pagina')
+@section('footer','Piè pagina')
 
 <html lang="en">
 <head>
@@ -26,14 +28,8 @@ text-align: center;
 </style>
 <body>
 <div class="wrapper">
-  <div class="test">
-  <h3>testando sass che non va</h3>
-  </div>
   <!-- se metto @ prima delle doppie graffe funge da escape per evitare confusione quando uso vue magari? -->
 <h1>Ciao {{$name}} , oggi è il {{date('d-m-Y')}}, il tuo primo giorno su laravel</h1>
-@section('title','Titolo della pagina')
-@section('footer','Piè pagina')
-
 @hasSection('footer')
 <h2>la sezione footer è presente</h2>
 @endif

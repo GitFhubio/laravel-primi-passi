@@ -2,6 +2,9 @@
 
 @section('content')
 
-<h1>sono in landingpage</h1>
+<div style="width:100%;display:flex;justify-content:center;" class="container">
+
+  <h1 style="color:red;">sono in landingpage</h1>
+</div>
 
 @endsection
