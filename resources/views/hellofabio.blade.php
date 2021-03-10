@@ -5,11 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+  width:100vw;
+  height:100vh;
+  max-width:100%;
+  background-color: #ccc;
+}
+.header{
+  background-color: red;
+text-align: center;
+}
+</style>
 <body>
 <div class="wrapper">
   <!-- se metto @ prima delle doppie graffe funge da escape per evitare confusione quando uso vue magari? -->
 <h1>Ciao {{$name}} , oggi è il {{date('d-m-Y')}}, il tuo primo giorno su laravel</h1>
+@extends('layouts.master')
+
+@section('title','Titolo della pagina')
+@section('footer','Piè pagina')
 </div>
+
 
 <?php var_dump($array) ?>
 
@@ -40,3 +62,21 @@
 <p>questa scritta esce perché l'array 2 che hai passato è vuoto</p>
 <!-- $array2 is "empty"... -->
 @endempty
+
+<!-- determina l'ambiente in cui faccio girare l'app -->
+
+<!-- @env('staging')
+    // The application is running in "staging"...
+@endenv
+
+@env(['staging', 'production'])
+    // The application is running in "staging" or "production"...
+@endenv -->
+
+<!-- @hasSection('navigation')
+    <div class="pull-right">
+        @yield('navigation')
+    </div>
+
+    <div class="clearfix"></div>
+@endif -->
