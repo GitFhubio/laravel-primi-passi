@@ -92,10 +92,11 @@ var_dump($users);
     The current value is {{ $x }} <br>
 @endfor
 
-@foreach ($users as $user)
+ @foreach ($users as $user)
     <p>This user is age {{ $user['age'] }}</p>
 @endforeach
 
+<!-- {{{--   --}}} -->
 <!-- per commentare in laravel -->
 
 <!-- determina l'ambiente in cui faccio girare l'app -->

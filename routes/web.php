@@ -24,3 +24,5 @@ Route::get('/help', function () {
 Route::get('/hellofabio', function () {
     return view('hellofabio', ['name' => 'fabio','array'=>['pippo','franco'],'array2'=>[],'i'=>1,'users'=>[['age'=>5,'city'=>'Rome'],['age'=>10,'city'=>'Milano']]]);
 });
+
+Route::get('/testcontroller', 'View\LandingPage');
