@@ -12,6 +12,6 @@ class Home extends Controller
   }
 
   private function me(){
-return 1;
+return view('help');
   }
 }
