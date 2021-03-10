@@ -29,3 +29,14 @@
   <h4>I don't have any records!</h4>
 
 @endif
+
+@isset($array)
+ <!-- $array is defined and is not null... -->
+<h1>Ottavio mi ha detto di sprigionare la mia fantasia oggi!!</h1>
+@endisset
+
+@empty($array2)
+
+<p>questa scritta esce perché l'array 2 che hai passato è vuoto</p>
+<!-- $array2 is "empty"... -->
+@endempty

@@ -22,5 +22,5 @@ Route::get('/help', function () {
 });
 
 Route::get('/hellofabio', function () {
-    return view('hellofabio', ['name' => 'fabio','array'=>['pippo','franco']]);
+    return view('hellofabio', ['name' => 'fabio','array'=>['pippo','franco'],'array2'=>[]]);
 });
