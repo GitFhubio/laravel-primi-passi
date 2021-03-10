@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="wrapper">
-<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt reiciendis nostrum rem labore ipsa, tenetur commodi perspiciatis, ipsum soluta a excepturi non voluptatibus ullam facere accusamus odit molestiae saepe ad?</h1>
+<h1>Ciao {{$name}} , oggi è il {{date('d-m-Y')}}, il tuo primo giorno con Laravel</h1>
 </div>
 </body>
 </html>
