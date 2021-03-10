@@ -8,7 +8,10 @@
 </head>
 <body>
 <div class="wrapper">
-<h1>Ciao {{$name}} , oggi è il {{date('d-m-Y')}}, il tuo primo giorno con Laravel</h1>
+<h1>Ciao {{$name}} , oggi è il {{date('d-m-Y')}}, il tuo primo giorno su laravel</h1>
 </div>
+
+<?php var_dump($array) ?>
+
 </body>
 </html>
