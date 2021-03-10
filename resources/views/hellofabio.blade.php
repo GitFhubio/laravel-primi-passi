@@ -33,6 +33,11 @@ text-align: center;
 <h1>Ciao {{$name}} , oggi è il {{date('d-m-Y')}}, il tuo primo giorno su laravel</h1>
 @section('title','Titolo della pagina')
 @section('footer','Piè pagina')
+
+@hasSection('footer')
+<h2>la sezione footer è presente</h2>
+@endif
+
 </div>
 
 
@@ -66,6 +71,24 @@ text-align: center;
 <!-- $array2 is "empty"... -->
 @endempty
 
+
+@switch($i)
+    @case(1)
+        Prova switch,ho passato 1
+        @break
+
+    @case(2)
+        Prova switch,ho passato 2
+        @break
+
+    @default
+        Default case
+@endswitch
+
+@for ($x = 0; $x < 10; $x++)
+    The current value is {{ $x }} <br>
+@endfor
+
 <!-- determina l'ambiente in cui faccio girare l'app -->
 
 <!-- @env('staging')
@@ -75,11 +98,3 @@ text-align: center;
 @env(['staging', 'production'])
     // The application is running in "staging" or "production"...
 @endenv -->
-
-<!-- @hasSection('navigation')
-    <div class="pull-right">
-        @yield('navigation')
-    </div>
-
-    <div class="clearfix"></div>
-@endif -->
