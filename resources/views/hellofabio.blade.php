@@ -41,7 +41,10 @@ text-align: center;
 </div>
 
 
-<?php var_dump($array) ?>
+<?php var_dump($array);
+var_dump($users);
+
+?>
 
 <script>
     var app = @json($array);
@@ -89,9 +92,9 @@ text-align: center;
     The current value is {{ $x }} <br>
 @endfor
 
-{{{-- @foreach ($users as $user)
-    <p>This user is age {{ $user->age }}</p>
-@endforeach --}}}
+@foreach ($users as $user)
+    <p>This user is age {{ $user['age'] }}</p>
+@endforeach
 
 <!-- per commentare in laravel -->
 
