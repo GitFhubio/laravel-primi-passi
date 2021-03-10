@@ -11,7 +11,8 @@ class Home extends Controller
     return $this->me();
   }
 
+// ritornare vista da controller
   private function me(){
-return view('help');
+return view('landingpage');
   }
 }
