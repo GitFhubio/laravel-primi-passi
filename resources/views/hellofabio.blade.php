@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
 <style>
 *{
@@ -28,6 +29,9 @@ text-align: center;
 </style>
 <body>
 <div class="wrapper">
+  <div class="test">
+prova sass
+  </div>
   <!-- se metto @ prima delle doppie graffe funge da escape per evitare confusione quando uso vue magari? -->
 <h1>Ciao {{$name}} , oggi è il {{date('d-m-Y')}}, il tuo primo giorno su laravel</h1>
 @hasSection('footer')
