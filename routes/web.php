@@ -28,4 +28,8 @@ Route::get('/hellofabio', function () {
 Route::get('/testcontroller', 'View\LandingPage');
 Route::get('/hello', 'View\LandingPage@hello');
 
-Route::get('/helloman', 'Dashboard\Home');
+
+Route::get('/landingpage', 'Dashboard\Home');
+Route::get('/contacts', function () {
+    return view('contactspage');
+});
