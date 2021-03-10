@@ -1,3 +1,5 @@
+@extends('layouts.master')
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,8 +28,6 @@ text-align: center;
 <div class="wrapper">
   <!-- se metto @ prima delle doppie graffe funge da escape per evitare confusione quando uso vue magari? -->
 <h1>Ciao {{$name}} , oggi è il {{date('d-m-Y')}}, il tuo primo giorno su laravel</h1>
-@extends('layouts.master')
-
 @section('title','Titolo della pagina')
 @section('footer','Piè pagina')
 </div>
