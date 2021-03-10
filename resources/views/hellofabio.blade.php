@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,6 +11,14 @@
 </div>
 
 <?php var_dump($array) ?>
-
 </body>
 </html>
+
+@if (count($array) === 1)
+  <p>  I have one record! </p>
+@elseif (count($array) > 1)
+  <h1>I have multiple records!</h1>
+@else
+  <h4>I don't have any records!</h4>
+
+@endif
