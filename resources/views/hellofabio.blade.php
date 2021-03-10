@@ -26,6 +26,9 @@ text-align: center;
 </style>
 <body>
 <div class="wrapper">
+  <div class="test">
+  <h3>testando sass che non va</h3>
+  </div>
   <!-- se metto @ prima delle doppie graffe funge da escape per evitare confusione quando uso vue magari? -->
 <h1>Ciao {{$name}} , oggi è il {{date('d-m-Y')}}, il tuo primo giorno su laravel</h1>
 @section('title','Titolo della pagina')
