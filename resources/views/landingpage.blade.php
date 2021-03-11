@@ -7,5 +7,5 @@
   <h1 style="color:red;">sono in landingpage</h1>
 </div>
 
-<pre>{{$data}}</pre>
+<pre>{{dd($data)}}</pre>
 @endsection
