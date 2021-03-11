@@ -13,6 +13,6 @@ class Home extends Controller
 
 // ritornare vista da controller
   private function me(){
-return view('landingpage');
+return view('landingpage')->with('data','ciao come stai alfredo?');
   }
 }
