@@ -35,3 +35,5 @@ Route::get('/landingpage/{par?}', 'Dashboard\Home');
 Route::get('/contacts', function () {
     return view('contactspage');
 });
+
+Route::get('/testmodel', 'Test\Model');
