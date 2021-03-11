@@ -12,4 +12,6 @@
 <p> {{$key}} : {{$value}} </p>
  @endforeach
 
+ {{request()->par}}
+
 @endsection
